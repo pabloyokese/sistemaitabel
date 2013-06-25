@@ -1,0 +1,16 @@
+<?php
+class CarreraModel extends CI_Model
+ {
+	public function adicionar_carrera($nombre, $matricula){
+		$data = array("nombre" => $nombre,
+						"matricula" => $matricula);
+		 $this->db->insert("carrera",$data);
+	}
+	
+	public function carreras(){
+		$query = $this->db->order_by("nombre","ASC");
+		$query = $this->db->get("carrera");
+		return $query->result();
+	}
+
+}
