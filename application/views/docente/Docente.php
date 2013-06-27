@@ -1,9 +1,8 @@
 <body>
-		<?php $username = $this->session->userdata('username'); echo $username;?>
 		<?php
-		echo "ESTUDIANTES";
+		echo "DOCENTES";
 		?>
-		<?php echo form_open('principal/ver_estudiante');?>
+		<?php echo form_open('principal/ver_docente');?>
             <p>Ci:<br>
             <input type="text" name="ci"/>
             </p>
@@ -11,4 +10,3 @@
 		<?php echo form_close();?>                  
 
 </body>
-

@@ -14,7 +14,7 @@
 <body>
 
 		<?php
-		echo "Instituto Tecnico ITABEL";
+		echo "Acceso al Sistema";
 		?>
 		<?php echo form_open('principal/validar');?>
             <p>Ci<br>
@@ -27,7 +27,7 @@
             <input type="text" name="password"/>
             <span class="textfieldRequiredMsg"> </span></span>
             </p>
-            <input type="submit" value="Ingresar" />
+            <input type="submit" value="Acceder" />
 		<? echo form_close();?>                  
 
 <script type="text/javascript">

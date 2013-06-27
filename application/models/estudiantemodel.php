@@ -25,11 +25,4 @@ class EstudianteModel extends CI_Model
 		return $query->row();
 	}
 
-	public function adicionar_matricula($id_estudiante, $id_carrera, $fecha, $matricula){
-		$data = array("id_estudiante" => $id_estudiante,
-				"id_carrera" => $id_carrera,
-				"fecha" => $fecha,
-				"matricula" => $matricula);
-		$this->db->insert("matriculacion",$data);
-	}
 }

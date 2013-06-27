@@ -1,9 +1,8 @@
 <?php
 class CarreraModel extends CI_Model
  {
-	public function adicionar_carrera($nombre, $matricula){
-		$data = array("nombre" => $nombre,
-						"matricula" => $matricula);
+	public function adicionar_carrera($nombre){
+		$data = array("nombre" => $nombre);
 		 $this->db->insert("carrera",$data);
 	}
 	

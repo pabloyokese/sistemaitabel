@@ -1,33 +1,23 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<title>Document</title>
-<!-- Bootstrap -->
-<link href="<?php echo site_url('css/bootstrap.min.css'); ?>" rel="stylesheet">
-<script src="<?php echo site_url('js/jquery-1.9.1.min.js');?>"></script>
-<script src="<?php echo site_url('js/bootstrap.min.js');?>"></script>
-
-</head>
 <body>
-		<?="CARRERAS";?>
-
+		<?php echo "CARRERAS";?>
 				<table class="table table-bordered">
 						<tr>
-							<td>ID</td>
+							<td>Num</td>
 							<td>Nombre</td>
-							<td>Matricula (Bs.)</td>
+							<td>Modificar</td>
+							<td>Eliminar</td>
 						</tr>
+						<?php $i=0;?>
 							<?php foreach($carrera as $row):?>
 							<tr>
-								<td><?php echo $row->id_carrera;?></td>
+								<td><?php echo $i=$i+1;?></td>
 								<td><?php echo $row->nombre;?></td>
-								<td><?php echo $row->matricula;?></td>
+								<td></td>
+								<td></td>
 							</tr>
 					
 							<?php endforeach;?>   
 
           			</table>	
-        <p><?=anchor('principal/adicionar_carrera','NUEVA CARRERA');?>
+        <p><?php echo anchor('principal/adicionar_carrera','NUEVA CARRERA');?>
 </body>
-</html>

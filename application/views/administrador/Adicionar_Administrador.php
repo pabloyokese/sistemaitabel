@@ -1,14 +1,3 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<title>Document</title>
-<!-- Bootstrap -->
-<link href="<?php echo site_url('css/bootstrap.min.css'); ?>" rel="stylesheet">
-<script src="<?php echo site_url('js/jquery-1.9.1.min.js');?>"></script>
-<script src="<?php echo site_url('js/bootstrap.min.js');?>"></script>
-
-</head>
 <body>
 
 		<?php
@@ -17,7 +6,7 @@
 		<table>
 		<?=form_open('principal/cargar_administrador');?>
             <tr><td>Ci:</td><td>
-            <input type="text" name="ci"/></td></tr>
+            <input type="text" name="ci" value='<?php echo $ci;?>'/></td></tr>
             <tr><td>Cargo:</td><td>
             <select name="cargo">
 				<option value="Administrador">Administrador
@@ -57,4 +46,3 @@
 		<? echo form_close();?>    
 		</table>              
 </body>
-</html>
