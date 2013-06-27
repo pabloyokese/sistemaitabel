@@ -1,0 +1,18 @@
+clonar
+
+git clone https://github.com/pabloyokese/sistemaitabel.git
+
+
+subir 
+git add .
+git commit -m "he añadido el controlador materia"
+git remote add origin https://github.com/pabloyokese/sistemaitabel.git
+git push origin master
+
+
+http://rogerdudler.github.io/git-guide/index.es.html
+
+
+https://help.github.com/articles/set-up-git
+
+https://help.github.com/articles/generating-ssh-keys
